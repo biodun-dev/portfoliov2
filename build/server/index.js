@@ -1,4 +1,4 @@
-import { s, i, j, o, k, l, h, p, q } from "./assets/server-build-ChNqiQLF.js";
+import { s, i, j, o, k, l, h, p, q } from "./assets/server-build-C82QV7R3.js";
 import "react/jsx-runtime";
 import "@remix-run/react";
 import "isbot";
@@ -8,7 +8,6 @@ import "react";
 import "framer-motion";
 import "@mdx-js/react";
 import "@aws-sdk/client-ses";
-import "@remix-run/node";
 export {
   s as assets,
   i as assetsBuildDirectory,
