@@ -1,0 +1,47 @@
+__  __  __
+\ \ \ \ \/
+ \ \/\ \
+  \/  \/
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DEVELOPER | デベロッパー
+
+Abiodun Abdullahi
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+twitter.com/bioduun_dev
+github.com/biodun-dev
+
+_______________________________________________________________________________
+
+TECHNOLOGY | テクノロジー
+
+React
+Remix
+Three.js
+Framer Motion
+
+_______________________________________________________________________________
+
+FONTS | フォント
+
+Gotham
+IPA Gothic Regular
+Hiragino Kaku Gothic W8
+_______________________________________________________________________________
+
+ATTRIBUTION | クレジット
+
+Original design inspired by Hamish W (https://hamishw.com)  
+Certain elements adapted from Hamish W’s open-source work.
+
+_______________________________________________________________________________
