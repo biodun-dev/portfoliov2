@@ -8,7 +8,6 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "postbuild": "remix setup netlify",
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
@@ -22,9 +21,7 @@
     "@mdx-js/react": "^3.0.1",
     "@remix-run/cloudflare": "^2.7.1",
     "@remix-run/cloudflare-pages": "^2.7.1",
-    "@remix-run/netlify": "^1.19.3",
     "@remix-run/react": "^2.7.1",
-    "crypto-browserify": "^3.12.1",
     "framer-motion": "11.0.5",
     "isbot": "^4.1.0",
     "miniflare": "^3.20231030.4",
@@ -67,6 +64,6 @@
     "wrangler": "^3.24.0"
   },
   "engines": {
-    "node": "20"
+    "node": ">=19.9.0"
   }
 }
