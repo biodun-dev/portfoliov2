@@ -28,6 +28,8 @@ export function ProjectSummary({
   model,
   buttonText,
   buttonLink,
+  playStoreText, // <-- Add this
+  playStoreLink, 
   alternate,
   ...rest
 }) {
@@ -89,14 +91,22 @@ export function ProjectSummary({
         <Text className={styles.description} data-visible={visible} as="p">
           {description}
         </Text>
-        <div className={styles.button} data-visible={visible}>
+        <div className={styles.buttonGroup} data-visible={visible}>
+
           <Button iconHoverShift href={buttonLink} iconEnd="arrow-right">
             {buttonText}
           </Button>
+  
+          {playStoreLink && playStoreText && (
+            <Button iconHoverShift href={playStoreLink} iconEnd="arrow-right" style={{ marginTop: '2rem' }}>
+              {playStoreText}
+            </Button>
+          )}
         </div>
       </div>
     );
   }
+  
 
   function renderPreview(visible) {
     return (

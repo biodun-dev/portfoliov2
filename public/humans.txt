@@ -8,9 +8,9 @@ and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+DEVELOPER | デベロッパー
 
-Hamish Williams
+Abiodun Abdullahi
 Hand crafted design & web development
 
 Design tools:
@@ -18,8 +18,8 @@ Figma
 Photoshop
 Blender
 
-twitter.com/hamishmw
-github.com/hamishmw
+twitter.com/bioduun_dev
+github.com/biodun-dev
 
 _______________________________________________________________________________
 
@@ -37,3 +37,11 @@ FONTS | フォント
 Gotham
 IPA Gothic Regular
 Hiragino Kaku Gothic W8
+_______________________________________________________________________________
+
+ATTRIBUTION | クレジット
+
+Original design inspired by Hamish W (https://hamishw.com)  
+Certain elements adapted from Hamish W’s open-source work.
+
+_______________________________________________________________________________

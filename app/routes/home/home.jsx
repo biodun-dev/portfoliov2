@@ -1,15 +1,22 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
+import gamestackTexture2Large from '~/assets/gywde-search-large.jpg';
 import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
+import gamestackTexture2 from '~/assets/gywde-search.jpg';
+import gamestackTexture3 from '~/assets/eko.jpg';
+import gamestackTexture3Large from '~/assets/eko.jpg';
+
+import gamestackTexture4 from '~/assets/eko-large.jpg';
+
+import gamestackTexture4Large from '~/assets/eko-large.jpg';
+
+import gamestackTextureLarge from '~/assets/gywde-login-large.jpg';
 import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
+import gamestackTexture from '~/assets/gywde-login.jpg';
+import sliceTextureLarge from '~/assets/BC-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
+import sliceTexture from '~/assets/BC.jpg';
+import sprTextureLarge from '~/assets/sawl-large.jpg';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import sprTexture from '~/assets/sawl.jpg';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -41,7 +48,7 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
+    title: 'Designer  + Developer',
     description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
   });
 };
@@ -53,10 +60,11 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -103,13 +111,13 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Streamlining Education for the Modern Learner"
+        description="Building a Cohort-Based Platform to Streamline Online Education and Student Engagement"
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Smart Approaches We Learn',
           textures: [
             {
               srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
@@ -118,16 +126,19 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Changing the Future of Freelance Work"
+        description="Gywde: Get Your Work Done Effortlessly — A Dynamic Platform Connecting Businesses and Consumers with Skilled Freelancers in Nigeria"
+        buttonText="Download from Apple App Store"
+        buttonLink="https://apps.apple.com/ng/app/gywde/id6602887701"
+        playStoreText="Download from Google Play Store"
+        playStoreLink="https://play.google.com/store/apps/details?id=com.gywde.app"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -143,18 +154,47 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
         id="project-3"
+        alternate
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
+        index={2}
+        title="Elevating Hospitality Through Seamless Lifestyle Experiences"
+        description="Eko Hotel Delivery: A Premium Lifestyle App Offering Seamless Delivery Services and Exclusive Access to Luxury Experiences in Lagos, Nigeria."
+        buttonText="Download from Apple App Store"
+        buttonLink="https://apps.apple.com/ng/app/eko-premium/id6740982139"
+        playStoreText="Download from Google Play Store"
+        playStoreLink="https://play.google.com/store/apps/details?id=com.ekopremium.app"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: `${gamestackTexture3} 375w, ${gamestackTexture3Large} 750w`,
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: `${gamestackTexture4} 375w, ${gamestackTexture4Large} 750w`,
+              placeholder: gamestackTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-4"
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Transforming Global Payments with Peer-to-Peer Solutions"
+        description="BananaCrystal: Facilitating seamless, low-cost, and secure peer-to-peer USD transactions worldwide. Empowering businesses and individuals with innovative blockchain-based payment solutions."        
         buttonText="View project"
         buttonLink="/projects/slice"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Annotating Banana crystal image on the slice app',
           textures: [
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,

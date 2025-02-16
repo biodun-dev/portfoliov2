@@ -44,22 +44,17 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
+                    I collaborate with designers using{' '}
+                    <Link href="https://www.figma.com">Figma</Link>, especially for UI/UX
+                    alignment in product development.
                   </ListItem>
                   <ListItem>
-                    Any motion graphics I create are created in Adobe After Effects. So
-                    far I haven’t found a non-Adobe product that’s as good. If anyone has
-                    suggestions please <Link href="/contact">message me</Link>.
+                    I work closely with design teams who use tools like Adobe XD and After
+                    Effects for motion and interaction designs.
                   </ListItem>
                   <ListItem>
-                    For any 3D models and video editing I use{' '}
-                    <Link href="https://www.blender.org/">Blender</Link>. Since 2.8 it’s
-                    become way simpler to use and in a lot of ways better than expensive
-                    paid tools like 3DS Max or Maya.
+                    For prototyping and early-stage concepts, Figma's interactive features
+                    have been helpful for project visualization.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -73,41 +68,45 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    I use <Link href="https://vscodium.com/">VSCodium</Link> as my text
-                    editor, with the Tokyo Night theme and Operator Mono as my typeface of
-                    choice.
+                    I primarily use{' '}
+                    <Link href="https://code.visualstudio.com/">VSCode</Link> for
+                    development, with extensions like Prettier, ESLint, and GitLens to
+                    optimize productivity.
                   </ListItem>
                   <ListItem>
-                    Firefox is my main browser for both development and general use.
+                    My backend stack includes{' '}
+                    <Link href="https://nodejs.org/">Node.js</Link>,{' '}
+                    <Link href="https://nestjs.com/">NestJS</Link>, and{' '}
+                    <Link href="https://rubyonrails.org/">Ruby on Rails</Link>.
                   </ListItem>
                   <ListItem>
-                    <Link href="https://reactjs.org/">React</Link> is my front end
-                    Javascript library of choice. The component-centric mental model is
-                    the first thing that truly made sense to me as a designer.
+                    For frontend development, I prefer{' '}
+                    <Link href="https://reactjs.org/">React.js</Link> and{' '}
+                    <Link href="https://reactnative.dev/">React Native</Link> for mobile
+                    apps.
                   </ListItem>
                   <ListItem>
-                    For 3D effects and image shaders I use{' '}
-                    <Link href="https://threejs.org/">three.js</Link>. It has a bit of a
-                    learning curve but you can do some really powerful stuff with it.
+                    I manage real-time operations using{' '}
+                    <Link href="https://socket.io/">Socket.IO</Link> and queue-based
+                    systems like{' '}
+                    <Link href="https://optimalbits.github.io/bull/">BullMQ</Link> for
+                    high-concurrency workloads.
                   </ListItem>
                   <ListItem>
-                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I’m using vanilla CSS with{' '}
-                    <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
-                    features today.
+                    Testing frameworks like <Link href="https://rspec.info/">RSpec</Link>{' '}
+                    and end-to-end tools like Playwright are part of my CI/CD pipeline.
                   </ListItem>
                   <ListItem>
-                    For Javascript animations I use{' '}
-                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
-                    a great way to add spring animations to React and three.js.
+                    I deploy applications on{' '}
+                    <Link href="https://aws.amazon.com/">AWS</Link> with{' '}
+                    <Link href="https://circleci.com/">CircleCI</Link> for CI/CD
+                    automation.
                   </ListItem>
                   <ListItem>
-                    For building and testing UI components in isolation I use{' '}
-                    <Link href="https://storybook.js.org/">Storybook</Link>. Check out the{' '}
-                    <Link href="https://storybook.hamishw.com">
-                      storybook for this website
-                    </Link>
-                    .
+                    Database choices often include{' '}
+                    <Link href="https://www.mysql.com/">MySQL</Link> and{' '}
+                    <Link href="https://www.postgresql.org/">PostgreSQL</Link>, depending
+                    on project needs.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -121,40 +120,46 @@ export const Uses = () => {
               <Table>
                 <TableBody>
                   <TableRow>
-                    <TableHeadCell>Desktop</TableHeadCell>
-                    <TableCell>Custom built</TableCell>
+                    <TableHeadCell>Main Work Machine</TableHeadCell>
+                    <TableCell>MacBook Pro (M1) 14″</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Operating system</TableHeadCell>
-                    <TableCell>Arch Linux (by the way)</TableCell>
+                    <TableHeadCell>Operating Systems</TableHeadCell>
+                    <TableCell>
+                      macOS (primary), Linux (for server and development)
+                    </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Browser</TableHeadCell>
-                    <TableCell>Zen Browser</TableCell>
+                    <TableCell>
+                      Google Chrome (for development), Safari (personal)
+                    </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
+                    <TableCell>LG UltraFine 5K</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Tofu65</TableCell>
+                    <TableCell>Keychron K2 (Mechanical)</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G403</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″</TableCell>
+                    <TableCell>Logitech MX Master 3</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
+                    <TableCell>AirPods Pro / Sony WH-1000XM4</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Microphone</TableHeadCell>
-                    <TableCell>Blue Yeti</TableCell>
+                    <TableCell>Shure MV7</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableHeadCell>Server</TableHeadCell>
+                    <TableCell>
+                      Linux-powered home server with MTN internet (self-hosted backend)
+                    </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

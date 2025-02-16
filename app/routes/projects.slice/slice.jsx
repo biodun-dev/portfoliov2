@@ -1,26 +1,25 @@
-import sliceAnnotationLarge from '~/assets/slice-annotation-large.png';
+import { Fragment } from 'react';
+import sliceAnnotationLarge from '~/assets/BC-veri-large.png';
 import sliceAnnotationPlaceholder from '~/assets/slice-annotation-placeholder.png';
-import sliceAnnotation from '~/assets/slice-annotation.png';
-import sliceAppLarge from '~/assets/slice-app-large.jpg';
+import sliceAnnotation from '~/assets/BC-veri.png';
+import sliceAppLarge from '~/assets/BC-large.jpg';
 import sliceAppPlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceApp from '~/assets/slice-app.jpg';
-import sliceBackgroundBarLarge from '~/assets/slice-background-bar-large.jpg';
+import sliceApp from '~/assets/BC.jpg';
+import sliceBackgroundBarLarge from '~/assets/BC2-large.jpg';
 import sliceBackgroundBarPlaceholder from '~/assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from '~/assets/slice-background-bar.jpg';
-import sliceBackgroundLarge from '~/assets/slice-background-large.jpg';
+import sliceBackgroundBar from '~/assets/BC2.jpg';
+import sliceBackgroundLarge from '~/assets/BC2-large.jpg';
 import sliceBackgroundPlaceholder from '~/assets/slice-background-placeholder.jpg';
-import sliceBackground from '~/assets/slice-background.jpg';
+import sliceBackground from '~/assets/BC2.jpg';
 import sliceIrlPlaceholder from '~/assets/slice-irl-placeholder.jpg';
-import sliceIrl from '~/assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from '~/assets/slice-sidebar-annotations-large.png';
-import sliceSidebarAnnotationsPlaceholder from '~/assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from '~/assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from '~/assets/slice-sidebar-layers-large.png';
+import sliceIrl from '~/assets/BC-landing.png';
+
+import sliceSidebarLayersLarge from '~/assets/BC-layer-large.png';
 import sliceSidebarLayersPlaceholder from '~/assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from '~/assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from '~/assets/slice-slides-large.jpg';
+import sliceSidebarLayers from '~/assets/BC-layer.png';
+import sliceSlidesLarge from '~/assets/BC-chat-large.jpg';
 import sliceSlidesPlaceholder from '~/assets/slice-slides-placeholder.jpg';
-import sliceSlides from '~/assets/slice-slides.jpg';
+import sliceSlides from '~/assets/BC-chat.jpg';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import {
@@ -35,15 +34,21 @@ import {
   ProjectSectionText,
   ProjectTextRow,
 } from '~/layouts/project';
-import { Fragment } from 'react';
-import { media } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
+import { media } from '~/utils/style';
 import styles from './slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'Transforming Global Payments with Peer-to-Peer Solutions';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
-const roles = ['User Research', 'UX Design', 'Interface Design'];
+  'This project involved building a secure, user-friendly platform for BananaCrystal, enabling seamless peer-to-peer USD transactions with blockchain technology, real-time transfers, and enhanced payment experiences.';
+
+const roles = [
+  'Senior Software Engineer',
+  'Ruby on Rails',
+  'Node.js',
+  'Blockchain Integration',
+  'FinTech Platform Development',
+];
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -64,7 +69,7 @@ export const Slice = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.best.edu.au/s/q2yjjvl7?data=8%404!9%4020303!10%40-15087&version=1"
+          url="https://www.bananacrystal.com/"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -84,14 +89,15 @@ export const Slice = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                As a developer at BananaCrystal, I contributed to building a secure,
+                blockchain-powered peer-to-peer payment platform. The system was built on
+                the Polygon blockchain to enable fast, low-cost USD transactions,
+                addressing issues like high fees and slow processing times.
               </ProjectSectionText>
               <ProjectSectionText>
-                Our solution was to allow users to be invited to a layer, where they can
-                see others’ annotations and make their own.
+                We also developed robust card rails, allowing users to seamlessly link
+                debit cards for transactions, enhancing accessibility and convenience for
+                both personal and business use.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -103,8 +109,9 @@ export const Slice = () => {
                 placeholder={sliceSidebarLayersPlaceholder}
                 alt="The layers sidebar design, now with user profiles."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
+                
               />
-              <Image
+              {/* <Image
                 className={styles.sidebarImage}
                 srcSet={`${sliceSidebarAnnotations} 350w, ${sliceSidebarAnnotationsLarge} 700w`}
                 width={350}
@@ -112,21 +119,27 @@ export const Slice = () => {
                 placeholder={sliceSidebarAnnotationsPlaceholder}
                 alt="Multiple user annotations on a shared layer."
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
-              />
+                
+              /> */}
             </div>
           </ProjectSectionColumns>
         </ProjectSection>
         <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
+              <ProjectSectionHeading>
+                Enhancing the Payment Experience
+              </ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+                One major challenge we addressed was the lack of effective communication
+                during payment disputes. To solve this, I implemented a peer-to-peer chat
+                system, enabling real-time communication between users and the dispute
+                resolution team.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                This feature streamlined the resolution process, allowing both parties to
+                provide evidence, clarify issues, and reach quicker resolutions,
+                significantly improving user satisfaction and platform trust.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -165,13 +178,14 @@ export const Slice = () => {
               </div>
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>
+                Strengthening Profile Management
+              </ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+                I enhanced profile management by integrating Sumsub for identity
+                verification, preventing bad actors from accessing the platform. This
+                improved security, ensured compliance, and streamlined the onboarding
+                process.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -179,15 +193,17 @@ export const Slice = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
+              <ProjectSectionHeading>Project Outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+                As part of a collaborative effort, we successfully delivered a secure and
+                efficient P2P payment platform. Key achievements included the
+                implementation of profile verification via Sumsub, a real-time dispute
+                chat system, and card rails integration. These features enhanced
+                transaction security, streamlined onboarding, and improved user trust in
+                the platform.
               </ProjectSectionText>
             </ProjectTextRow>
+
             <Image
               src={sliceIrl}
               width={940}
