@@ -54,21 +54,15 @@ import {
   ProjectHeader,
   ProjectImage,
   ProjectSection,
-  ProjectSectionColumns,
   ProjectSectionContent,
   ProjectSectionHeading,
   ProjectSectionText,
   ProjectTextRow,
 } from '~/layouts/project';
 import { baseMeta } from '~/utils/meta';
-import { Suspense, lazy, useMemo } from 'react';
+import { lazy } from 'react';
 import { media } from '~/utils/style';
-import styles from './smart-sparrow.module.css';
 
-const Earth = lazy(() => import('./earth').then(module => ({ default: module.Earth })));
-const EarthSection = lazy(() =>
-  import('./earth').then(module => ({ default: module.EarthSection }))
-);
 
 const title = 'Streamlining Education for the Modern Learner';
 const description =
