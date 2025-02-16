@@ -34,7 +34,7 @@ export async function action({ context, request }) {
   const ses = new SESClient({
     region: 'us-east-1',
     credentials: {
-      accessKeyId: context.cloudflare.env.AWS_ACCESS_KEY_ID,
+      accessKeyId: context.cloudflare.env.CUSTOM_AWS_ACCESS_KEY_ID,
       secretAccessKey: context.cloudflare.env.AWS_SECRET_ACCESS_KEY,
     },
   });
