@@ -1,6 +1,6 @@
 import { jsxs, jsx } from "react/jsx-runtime";
 import { useReducedMotion, animate } from "framer-motion";
-import { u as useInViewport, c as cssProps, r as resolveSrcFromSrcSet } from "./server-build-C82QV7R3.js";
+import { u as useInViewport, c as cssProps, r as resolveSrcFromSrcSet } from "./server-build-DCZOg7IS.js";
 import { useState, useRef, useEffect, useCallback } from "react";
 import { WebGLRenderer, OrthographicCamera, Scene, Color, LinearSRGBColorSpace, LinearFilter, ShaderMaterial, PlaneGeometry, Mesh } from "three";
 import { c as cleanScene, a as cleanRenderer, t as textureLoader } from "./three-CWl8dl3P.js";
@@ -10,6 +10,7 @@ import "react-dom/server";
 import "@remix-run/cloudflare";
 import "@mdx-js/react";
 import "@aws-sdk/client-ses";
+import "@remix-run/node";
 import "three-stdlib";
 const carousel = "_carousel_156nm_2";
 const content = "_content_156nm_6";

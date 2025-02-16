@@ -7,6 +7,7 @@ import { createContext, useContext, forwardRef, useRef, useEffect, useState, mem
 import { useReducedMotion, AnimatePresence, usePresence, useSpring } from "framer-motion";
 import { useMDXComponents, MDXProvider } from "@mdx-js/react";
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
+import { json as json$1 } from "@remix-run/node";
 async function handleRequest(request, responseStatusCode, responseHeaders, remixContext, loadContext) {
   const body = await renderToReadableStream(
     /* @__PURE__ */ jsx(RemixServer, { context: remixContext, url: request.url }),
@@ -393,11 +394,11 @@ const Text = ({
     }
   );
 };
-const loader$6 = "_loader_1o1zt_2";
+const loader$7 = "_loader_1o1zt_2";
 const text$4 = "_text_1o1zt_17";
 const span = "_span_1o1zt_43";
 const styles$y = {
-  loader: loader$6,
+  loader: loader$7,
   text: text$4,
   span
 };
@@ -496,12 +497,12 @@ const TransitionContent = ({
 };
 const button$5 = "_button_1l2e3_2";
 const text$3 = "_text_1l2e3_132";
-const loader$5 = "_loader_1l2e3_145";
+const loader$6 = "_loader_1l2e3_145";
 const icon$1 = "_icon_1l2e3_158";
 const styles$x = {
   button: button$5,
   text: text$3,
-  loader: loader$5,
+  loader: loader$6,
   icon: icon$1
 };
 function isExternalLink(href) {
@@ -1823,7 +1824,7 @@ const links$1 = () => [
   { rel: "apple-touch-icon", href: "/icon-256.png", sizes: "256x256" },
   { rel: "author", href: "/humans.txt", type: "text/plain" }
 ];
-const loader$4 = async ({ request, context }) => {
+const loader$5 = async ({ request, context }) => {
   const { url: url2 } = request;
   const { pathname } = new URL(url2);
   const pathnameSliced = pathname.endsWith("/") ? pathname.slice(0, -1) : url2;
@@ -1935,7 +1936,7 @@ const route0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   ErrorBoundary: ErrorBoundary$1,
   default: App,
   links: links$1,
-  loader: loader$4
+  loader: loader$5
 }, Symbol.toStringTag, { value: "Module" }));
 const frontmatter$1 = {
   "title": "Enabling Emoji Support in MySQL for Chat Applications",
@@ -2821,9 +2822,9 @@ const styles$h = {
   armor
 };
 const Carousel = lazy(
-  () => import("./index-BD1DnRt-.js").then((module) => ({ default: module.Carousel }))
+  () => import("./index-DaO3VwLb.js").then((module) => ({ default: module.Carousel }))
 );
-const Armor = lazy(() => import("./armor-iSIdyQBE.js").then((module) => ({ default: module.Armor })));
+const Armor = lazy(() => import("./armor-NXTdYekr.js").then((module) => ({ default: module.Armor })));
 const title$6 = "Volkihar Knight";
 const description$4 = "A lore-friendly armor mod for The Elder Scrolls V: Skyrim. Released on PC and Xbox One with over one million downloads across both platforms.";
 const roles$2 = ["3D Modelling", "Texturing", "Graphic Design"];
@@ -3110,9 +3111,9 @@ const SegmentedControlOption = ({ children, ...props }) => {
     }
   );
 };
-lazy(() => import("./earth-pMGPljyY.js").then((module) => ({ default: module.Earth })));
+lazy(() => import("./earth-Dj7I7SOh.js").then((module) => ({ default: module.Earth })));
 lazy(
-  () => import("./earth-pMGPljyY.js").then((module) => ({ default: module.EarthSection }))
+  () => import("./earth-Dj7I7SOh.js").then((module) => ({ default: module.EarthSection }))
 );
 const title$5 = "Streamlining Education for the Modern Learner";
 const description$3 = "I worked as the lead developer on Smart Approaches We Learn, an ed-tech platform for cohort-based learning in courses like Business Analysis, Data Analysis, and Software Product Development. The platform features student assignments, project reviews, grading, and secure payments via Stripe.";
@@ -4687,7 +4688,7 @@ function Barcode({ className }) {
     }
   );
 }
-async function loader$3() {
+async function loader$4() {
   const allPosts = await getPosts();
   const featured = allPosts.filter((post2) => post2.frontmatter.featured)[0];
   const posts = allPosts.filter((post2) => (featured == null ? void 0 : featured.slug) !== post2.slug);
@@ -4702,7 +4703,7 @@ function meta$6() {
 const route5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Articles$1,
-  loader: loader$3,
+  loader: loader$4,
   meta: meta$6
 }, Symbol.toStringTag, { value: "Module" }));
 const sliceAnnotationLarge = "/assets/BC-veri-CUNwD5Hw.png";
@@ -5182,7 +5183,7 @@ const postMarkdown = {
   strong: PostStrong,
   Embed
 };
-async function loader$2({ request }) {
+async function loader$3({ request }) {
   const slug = request.url.split("/").at(-1);
   const module = await __variableDynamicImportRuntimeHelper(/* @__PURE__ */ Object.assign({ "../articles.bull-mq.mdx": () => Promise.resolve().then(() => route4), "../articles.mysql_emoji_support.mdx": () => Promise.resolve().then(() => route1) }), `../articles.${slug}.mdx`, 2);
   const text2 = await __variableDynamicImportRuntimeHelper(/* @__PURE__ */ Object.assign({ "../articles.bull-mq.mdx": () => import("./articles.bull-mq-BfVSCV83.js"), "../articles.mysql_emoji_support.mdx": () => import("./articles.mysql_emoji_support-D-Jwr4--.js") }), `../articles.${slug}.mdx`, 2);
@@ -5205,7 +5206,7 @@ function Articles() {
 const route8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Articles,
-  loader: loader$2,
+  loader: loader$3,
   meta: meta$4
 }, Symbol.toStringTag, { value: "Module" }));
 const textarea = "_textarea_1ly3z_2";
@@ -5672,7 +5673,7 @@ const styles$5 = {
   mobileScrollIndicator
 };
 const DisplacementSphere = lazy(
-  () => import("./displacement-sphere-X4DQzLMk.js").then((module) => ({ default: module.DisplacementSphere }))
+  () => import("./displacement-sphere-0MwwCsC5.js").then((module) => ({ default: module.DisplacementSphere }))
 );
 function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
   const { theme } = useTheme();
@@ -5920,7 +5921,7 @@ const content = "_content_1cfqm_35";
 const details = "_details_1cfqm_65";
 const preview = "_preview_1cfqm_78";
 const model = "_model_1cfqm_88";
-const loader$1 = "_loader_1cfqm_142";
+const loader$2 = "_loader_1cfqm_142";
 const svg = "_svg_1cfqm_151";
 const index = "_index_1cfqm_192";
 const indexNumber = "_indexNumber_1cfqm_201";
@@ -5932,7 +5933,7 @@ const styles$3 = {
   details,
   preview,
   model,
-  loader: loader$1,
+  loader: loader$2,
   svg,
   index,
   indexNumber,
@@ -5940,7 +5941,7 @@ const styles$3 = {
   description
 };
 const Model = lazy(
-  () => import("./index-Dmce6Jnb.js").then((module) => ({ default: module.Model }))
+  () => import("./index-DXj-yawH.js").then((module) => ({ default: module.Model }))
 );
 function ProjectSummary({
   id,
@@ -6302,11 +6303,20 @@ const Home = () => {
     /* @__PURE__ */ jsx(Footer, {})
   ] });
 };
-const route13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Home,
   links,
   meta: meta$2
+}, Symbol.toStringTag, { value: "Module" }));
+const loader$1 = async () => json$1({ message: "Test route works!" });
+function Test() {
+  return /* @__PURE__ */ jsx("h1", { children: "Test Route is Working ✅" });
+}
+const route11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: Test,
+  loader: loader$1
 }, Symbol.toStringTag, { value: "Module" }));
 const usesBackgroundPlaceholder = "/assets/uses-background-placeholder-ppC4yTdE.jpg";
 const usesBackground = "/assets/uses-background-DVBwh5G1.mp4";
@@ -6478,7 +6488,7 @@ const Uses = () => {
     /* @__PURE__ */ jsx(Footer, {})
   ] });
 };
-const route11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Uses,
   meta: meta$1
@@ -6493,13 +6503,13 @@ function ErrorBoundary() {
   const error2 = useRouteError();
   return /* @__PURE__ */ jsx(Error$1, { error: error2 });
 }
-const route12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   ErrorBoundary,
   loader,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-DFTXBz5G.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/components-CIeRpJJx.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/root-BTJuebZb.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/components-CIeRpJJx.js", "/assets/image-DFroI6Pm.js", "/assets/error-37fJsO1_.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/heading-BjRlKi4B.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/useWindowSize-Br1Aw5Uy.js", "/assets/config-AqcvRU3G.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js"], "css": ["/assets/root-AirrcxGX.css", "/assets/image-Db9mAJ2F.css", "/assets/heading-UwcgqAqE.css", "/assets/error-BT7XG2_u.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css"] }, "routes/articles.mysql_emoji_support": { "id": "routes/articles.mysql_emoji_support", "parentId": "routes/articles", "path": "mysql_emoji_support", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/articles.mysql_emoji_support-DIJ9q-5Y.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/index-BW8I-Isz.js"], "css": [] }, "routes/projects.volkihar-knight": { "id": "routes/projects.volkihar-knight", "parentId": "root", "path": "projects/volkihar-knight", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-XNd_TNE1.js", "imports": ["/assets/preload-helper-D7HrI6pR.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/heading-BjRlKi4B.js", "/assets/meta-BEqd2dZY.js", "/assets/image-DFroI6Pm.js", "/assets/project-DAwxYzRY.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-TU9yO5A9.css", "/assets/heading-UwcgqAqE.css", "/assets/meta-DdulKb1r.css", "/assets/image-Db9mAJ2F.css", "/assets/project-C8oXv4p4.css"] }, "routes/projects.smart-sparrow": { "id": "routes/projects.smart-sparrow", "parentId": "root", "path": "projects/smart-sparrow", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-Dcivqq2h.js", "imports": ["/assets/preload-helper-D7HrI6pR.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/sawl-CVL3aAIR.js", "/assets/meta-BEqd2dZY.js", "/assets/image-DFroI6Pm.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/heading-BjRlKi4B.js", "/assets/project-DAwxYzRY.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-Brt_1JUZ.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/image-Db9mAJ2F.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/project-C8oXv4p4.css"] }, "routes/articles.bull-mq": { "id": "routes/articles.bull-mq", "parentId": "routes/articles", "path": "bull-mq", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/articles.bull-mq-BDju6oZQ.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/index-BW8I-Isz.js"], "css": [] }, "routes/articles_._index": { "id": "routes/articles_._index", "parentId": "root", "path": "articles", "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-iAeUm132.js", "imports": ["/assets/meta-BEqd2dZY.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/heading-BjRlKi4B.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/divider-CqDENsnb.js", "/assets/image-DFroI6Pm.js", "/assets/useWindowSize-Br1Aw5Uy.js", "/assets/date-DvyCAN0s.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js"], "css": ["/assets/route-2ahMLohn.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/divider-RCNywGVV.css", "/assets/image-Db9mAJ2F.css"] }, "routes/projects.slice": { "id": "routes/projects.slice", "parentId": "root", "path": "projects/slice", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-rTthXE24.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/BC-1llT3Oc7.js", "/assets/meta-BEqd2dZY.js", "/assets/image-DFroI6Pm.js", "/assets/project-DAwxYzRY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-DBxCm94u.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/image-Db9mAJ2F.css", "/assets/project-C8oXv4p4.css"] }, "routes/api.set-theme": { "id": "routes/api.set-theme", "parentId": "root", "path": "api/set-theme", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/api.set-theme-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/articles": { "id": "routes/articles", "parentId": "root", "path": "articles", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-DmtqB9kC.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/divider-CqDENsnb.js", "/assets/meta-BEqd2dZY.js", "/assets/heading-BjRlKi4B.js", "/assets/image-DFroI6Pm.js", "/assets/useParallax-BpL6gIpP.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/clamp-e7DugykH.js", "/assets/date-DvyCAN0s.js", "/assets/components-CIeRpJJx.js", "/assets/list-DOmsvHEJ.js", "/assets/index-BW8I-Isz.js", "/assets/config-AqcvRU3G.js"], "css": ["/assets/route-C-22_ukK.css", "/assets/divider-RCNywGVV.css", "/assets/heading-UwcgqAqE.css", "/assets/meta-DdulKb1r.css", "/assets/image-Db9mAJ2F.css", "/assets/list-A5E2UkK_.css"] }, "routes/contact": { "id": "routes/contact", "parentId": "root", "path": "contact", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-BtbNJ-ZE.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/heading-BjRlKi4B.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/divider-CqDENsnb.js", "/assets/meta-BEqd2dZY.js", "/assets/components-CIeRpJJx.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/config-AqcvRU3G.js"], "css": ["/assets/route-DUdvKm6g.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/divider-RCNywGVV.css", "/assets/meta-DdulKb1r.css"] }, "routes/home": { "id": "routes/home", "parentId": "root", "path": "home", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-CnWTuKTT.js", "imports": ["/assets/route-boz5RvR2.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/BC-1llT3Oc7.js", "/assets/sawl-CVL3aAIR.js", "/assets/meta-BEqd2dZY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/preload-helper-D7HrI6pR.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/image-DFroI6Pm.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/divider-CqDENsnb.js", "/assets/useWindowSize-Br1Aw5Uy.js"], "css": ["/assets/route-B21ryf_9.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/image-Db9mAJ2F.css", "/assets/divider-RCNywGVV.css"] }, "routes/uses": { "id": "routes/uses", "parentId": "root", "path": "uses", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-Bk_W3E4K.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/meta-BEqd2dZY.js", "/assets/list-DOmsvHEJ.js", "/assets/project-DAwxYzRY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/image-DFroI6Pm.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-D3qy7m5X.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/list-A5E2UkK_.css", "/assets/project-C8oXv4p4.css", "/assets/image-Db9mAJ2F.css"] }, "routes/$": { "id": "routes/$", "parentId": "root", "path": "*", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/_-BsuhQmY9.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/error-37fJsO1_.js", "/assets/components-CIeRpJJx.js", "/assets/heading-BjRlKi4B.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/image-DFroI6Pm.js"], "css": ["/assets/error-BT7XG2_u.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/image-Db9mAJ2F.css"] }, "routes/home/route": { "id": "routes/home/route", "parentId": "root", "path": "/", "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-CnWTuKTT.js", "imports": ["/assets/route-boz5RvR2.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/BC-1llT3Oc7.js", "/assets/sawl-CVL3aAIR.js", "/assets/meta-BEqd2dZY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/preload-helper-D7HrI6pR.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/image-DFroI6Pm.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/divider-CqDENsnb.js", "/assets/useWindowSize-Br1Aw5Uy.js"], "css": ["/assets/route-B21ryf_9.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/image-Db9mAJ2F.css", "/assets/divider-RCNywGVV.css"] } }, "url": "/assets/manifest-485d269c.js", "version": "485d269c" };
+const serverManifest = { "entry": { "module": "/assets/entry.client-DFTXBz5G.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/components-CIeRpJJx.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/root-BTJuebZb.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/components-CIeRpJJx.js", "/assets/image-DFroI6Pm.js", "/assets/error-37fJsO1_.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/heading-BjRlKi4B.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/useWindowSize-Br1Aw5Uy.js", "/assets/config-AqcvRU3G.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js"], "css": ["/assets/root-AirrcxGX.css", "/assets/image-Db9mAJ2F.css", "/assets/heading-UwcgqAqE.css", "/assets/error-BT7XG2_u.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css"] }, "routes/articles.mysql_emoji_support": { "id": "routes/articles.mysql_emoji_support", "parentId": "routes/articles", "path": "mysql_emoji_support", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/articles.mysql_emoji_support-DIJ9q-5Y.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/index-BW8I-Isz.js"], "css": [] }, "routes/projects.volkihar-knight": { "id": "routes/projects.volkihar-knight", "parentId": "root", "path": "projects/volkihar-knight", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-XNd_TNE1.js", "imports": ["/assets/preload-helper-D7HrI6pR.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/heading-BjRlKi4B.js", "/assets/meta-BEqd2dZY.js", "/assets/image-DFroI6Pm.js", "/assets/project-DAwxYzRY.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-TU9yO5A9.css", "/assets/heading-UwcgqAqE.css", "/assets/meta-DdulKb1r.css", "/assets/image-Db9mAJ2F.css", "/assets/project-C8oXv4p4.css"] }, "routes/projects.smart-sparrow": { "id": "routes/projects.smart-sparrow", "parentId": "root", "path": "projects/smart-sparrow", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-Dcivqq2h.js", "imports": ["/assets/preload-helper-D7HrI6pR.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/sawl-CVL3aAIR.js", "/assets/meta-BEqd2dZY.js", "/assets/image-DFroI6Pm.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/heading-BjRlKi4B.js", "/assets/project-DAwxYzRY.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-Brt_1JUZ.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/image-Db9mAJ2F.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/project-C8oXv4p4.css"] }, "routes/articles.bull-mq": { "id": "routes/articles.bull-mq", "parentId": "routes/articles", "path": "bull-mq", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/articles.bull-mq-BDju6oZQ.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/index-BW8I-Isz.js"], "css": [] }, "routes/articles_._index": { "id": "routes/articles_._index", "parentId": "root", "path": "articles", "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-iAeUm132.js", "imports": ["/assets/meta-BEqd2dZY.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/heading-BjRlKi4B.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/divider-CqDENsnb.js", "/assets/image-DFroI6Pm.js", "/assets/useWindowSize-Br1Aw5Uy.js", "/assets/date-DvyCAN0s.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js"], "css": ["/assets/route-2ahMLohn.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/divider-RCNywGVV.css", "/assets/image-Db9mAJ2F.css"] }, "routes/projects.slice": { "id": "routes/projects.slice", "parentId": "root", "path": "projects/slice", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-rTthXE24.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/BC-1llT3Oc7.js", "/assets/meta-BEqd2dZY.js", "/assets/image-DFroI6Pm.js", "/assets/project-DAwxYzRY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-DBxCm94u.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/image-Db9mAJ2F.css", "/assets/project-C8oXv4p4.css"] }, "routes/api.set-theme": { "id": "routes/api.set-theme", "parentId": "root", "path": "api/set-theme", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/api.set-theme-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/articles": { "id": "routes/articles", "parentId": "root", "path": "articles", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-DmtqB9kC.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/divider-CqDENsnb.js", "/assets/meta-BEqd2dZY.js", "/assets/heading-BjRlKi4B.js", "/assets/image-DFroI6Pm.js", "/assets/useParallax-BpL6gIpP.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/clamp-e7DugykH.js", "/assets/date-DvyCAN0s.js", "/assets/components-CIeRpJJx.js", "/assets/list-DOmsvHEJ.js", "/assets/index-BW8I-Isz.js", "/assets/config-AqcvRU3G.js"], "css": ["/assets/route-C-22_ukK.css", "/assets/divider-RCNywGVV.css", "/assets/heading-UwcgqAqE.css", "/assets/meta-DdulKb1r.css", "/assets/image-Db9mAJ2F.css", "/assets/list-A5E2UkK_.css"] }, "routes/contact": { "id": "routes/contact", "parentId": "root", "path": "contact", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-BtbNJ-ZE.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/heading-BjRlKi4B.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/divider-CqDENsnb.js", "/assets/meta-BEqd2dZY.js", "/assets/components-CIeRpJJx.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/config-AqcvRU3G.js"], "css": ["/assets/route-DUdvKm6g.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/divider-RCNywGVV.css", "/assets/meta-DdulKb1r.css"] }, "routes/home": { "id": "routes/home", "parentId": "root", "path": "home", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-CnWTuKTT.js", "imports": ["/assets/route-boz5RvR2.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/BC-1llT3Oc7.js", "/assets/sawl-CVL3aAIR.js", "/assets/meta-BEqd2dZY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/preload-helper-D7HrI6pR.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/image-DFroI6Pm.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/divider-CqDENsnb.js", "/assets/useWindowSize-Br1Aw5Uy.js"], "css": ["/assets/route-B21ryf_9.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/image-Db9mAJ2F.css", "/assets/divider-RCNywGVV.css"] }, "routes/test": { "id": "routes/test", "parentId": "root", "path": "test", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/test-BsH1ao7B.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js"], "css": [] }, "routes/uses": { "id": "routes/uses", "parentId": "root", "path": "uses", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-Bk_W3E4K.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/meta-BEqd2dZY.js", "/assets/list-DOmsvHEJ.js", "/assets/project-DAwxYzRY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/image-DFroI6Pm.js", "/assets/useParallax-BpL6gIpP.js"], "css": ["/assets/route-D3qy7m5X.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/list-A5E2UkK_.css", "/assets/project-C8oXv4p4.css", "/assets/image-Db9mAJ2F.css"] }, "routes/$": { "id": "routes/$", "parentId": "root", "path": "*", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/_-BsuhQmY9.js", "imports": ["/assets/jsx-runtime-Lfnj0zCF.js", "/assets/error-37fJsO1_.js", "/assets/components-CIeRpJJx.js", "/assets/heading-BjRlKi4B.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/image-DFroI6Pm.js"], "css": ["/assets/error-BT7XG2_u.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/image-Db9mAJ2F.css"] }, "routes/home/route": { "id": "routes/home/route", "parentId": "root", "path": "/", "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/route-CnWTuKTT.js", "imports": ["/assets/route-boz5RvR2.js", "/assets/jsx-runtime-Lfnj0zCF.js", "/assets/BC-1llT3Oc7.js", "/assets/sawl-CVL3aAIR.js", "/assets/meta-BEqd2dZY.js", "/assets/heading-BjRlKi4B.js", "/assets/components-CIeRpJJx.js", "/assets/config-AqcvRU3G.js", "/assets/preload-helper-D7HrI6pR.js", "/assets/decoder-text-CfSnXSKQ.js", "/assets/visually-hidden-D7ghLMuh.js", "/assets/use-spring-CcZhP75e.js", "/assets/index-C6rh08dF.js", "/assets/image-DFroI6Pm.js", "/assets/useScrollToHash-DYVQk_fa.js", "/assets/divider-CqDENsnb.js", "/assets/useWindowSize-Br1Aw5Uy.js"], "css": ["/assets/route-B21ryf_9.css", "/assets/meta-DdulKb1r.css", "/assets/heading-UwcgqAqE.css", "/assets/decoder-text-9RaPT1ab.css", "/assets/visually-hidden-BpS8kiyk.css", "/assets/image-Db9mAJ2F.css", "/assets/divider-RCNywGVV.css"] } }, "url": "/assets/manifest-fd006c2a.js", "version": "fd006c2a" };
 const mode = "production";
 const assetsBuildDirectory = "build/client";
 const basename = "/";
@@ -6594,7 +6604,15 @@ const routes = {
     path: "home",
     index: void 0,
     caseSensitive: void 0,
-    module: route13
+    module: route14
+  },
+  "routes/test": {
+    id: "routes/test",
+    parentId: "root",
+    path: "test",
+    index: void 0,
+    caseSensitive: void 0,
+    module: route11
   },
   "routes/uses": {
     id: "routes/uses",
@@ -6602,7 +6620,7 @@ const routes = {
     path: "uses",
     index: void 0,
     caseSensitive: void 0,
-    module: route11
+    module: route12
   },
   "routes/$": {
     id: "routes/$",
@@ -6610,7 +6628,7 @@ const routes = {
     path: "*",
     index: void 0,
     caseSensitive: void 0,
-    module: route12
+    module: route13
   },
   "routes/home/route": {
     id: "routes/home/route",
@@ -6618,7 +6636,7 @@ const routes = {
     path: "/",
     index: true,
     caseSensitive: void 0,
-    module: route13
+    module: route14
   }
 };
 const serverBuild = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({

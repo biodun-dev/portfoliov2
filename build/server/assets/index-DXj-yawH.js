@@ -1,6 +1,6 @@
 import { jsxs, jsx } from "react/jsx-runtime";
 import { useReducedMotion, useSpring, animate } from "framer-motion";
-import { u as useInViewport, c as cssProps, a as classes, n as numToMs, M as ModelAnimationType, r as resolveSrcFromSrcSet } from "./server-build-C82QV7R3.js";
+import { u as useInViewport, c as cssProps, a as classes, n as numToMs, M as ModelAnimationType, r as resolveSrcFromSrcSet } from "./server-build-DCZOg7IS.js";
 import { useState, useRef, useEffect, useCallback, createRef, startTransition } from "react";
 import { WebGLRenderer, SRGBColorSpace, PerspectiveCamera, Scene, Group, AmbientLight, DirectionalLight, WebGLRenderTarget, PlaneGeometry, MeshBasicMaterial, Mesh, OrthographicCamera, MeshDepthMaterial, ShaderMaterial, Color, Vector3, MathUtils } from "three";
 import { HorizontalBlurShader, VerticalBlurShader } from "three-stdlib";
@@ -12,6 +12,7 @@ import "react-dom/server";
 import "@remix-run/cloudflare";
 import "@mdx-js/react";
 import "@aws-sdk/client-ses";
+import "@remix-run/node";
 const model = "_model_fphsv_2";
 const canvas = "_canvas_fphsv_11";
 const styles = {

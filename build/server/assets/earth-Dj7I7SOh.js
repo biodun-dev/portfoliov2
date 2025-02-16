@@ -1,5 +1,5 @@
 import { jsx, jsxs } from "react/jsx-runtime";
-import { u as useInViewport, b as useWindowSize, d as numToPx, e as media, a as classes, T as Transition, m as msToNum, S as Section, L as Loader, t as tokens, f as clamp } from "./server-build-C82QV7R3.js";
+import { u as useInViewport, b as useWindowSize, d as numToPx, e as media, a as classes, T as Transition, m as msToNum, S as Section, L as Loader, t as tokens, f as clamp } from "./server-build-DCZOg7IS.js";
 import { useReducedMotion, useSpring } from "framer-motion";
 import { memo, useState, useRef, useCallback, useEffect, startTransition, createContext, useContext } from "react";
 import { OrbitControls, HDRCubeTextureLoader } from "three-stdlib";
@@ -12,6 +12,7 @@ import "react-dom/server";
 import "@remix-run/cloudflare";
 import "@mdx-js/react";
 import "@aws-sdk/client-ses";
+import "@remix-run/node";
 const earthModel = "/assets/earth-DvZudj9K.glb";
 const mwnx = "/assets/milkyway-nx-Ds_hwpSC.hdr";
 const mwny = "/assets/milkyway-ny-BqhFvupA.hdr";
