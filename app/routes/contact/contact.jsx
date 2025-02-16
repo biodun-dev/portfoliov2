@@ -35,7 +35,7 @@ export async function action({ context, request }) {
     region: 'us-east-1',
     credentials: {
       accessKeyId: context.cloudflare.env.CUSTOM_AWS_ACCESS_KEY_ID,
-      secretAccessKey: context.cloudflare.env.AWS_SECRET_ACCESS_KEY,
+      secretAccessKey: context.cloudflare.env.CUSTOM_AWS_SECRET_ACCESS_KEY,
     },
   });
 
