@@ -1,0 +1,24 @@
+# render.yaml - Hardcoded Secrets (Not Recommended)
+services:
+  - type: web
+    name: biodun-portfolio
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    rootDir: ./
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ENVIRONMENT
+        value: development
+      - key: SESSION_SECRET
+        value: KEEP_IT_SECRET_KEEP_IT_SAFE
+      - key: EMAIL
+        value: biodundev@gmail.com
+      - key: FROM_EMAIL
+        value: biodundev@gmail.com
+      - key: CUSTOM_AWS_ACCESS_KEY_ID
+        value: AKIA47CRVW5GBLH5CJU3
+      - key: CUSTOM_AWS_SECRET_ACCESS_KEY
+        value: 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
